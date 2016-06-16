@@ -1,0 +1,37 @@
+<% content_for :title do %>Prom Guy Performance<% end %>
+<div class="gridster">
+  <ul>
+  
+	<li data-row="1" data-col="1" data-sizex="6" data-sizey="1">
+      <div data-id="xedo_logo" data-view="Image" data-image="/xedo_logo.png" style="background-color:#111111"></div>
+    </li>	
+	
+    
+  
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_homepage_dom_load_graph" data-view="Graph" data-title="HomePage DOM Load Speed" data-suffix=" s" style="background-color:#ff9618; tick-color:#ff0000"></div>
+    </li>
+	
+	<li data-row="2" data-col="3" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_collections_dom_load_graph" data-view="Graph" data-title="Collections DOM Load Speed" data-suffix=" s"style="background-color:#1896ff"></div>
+    </li>
+	
+	<li data-row="2" data-col="5" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_outfit_builder_dom_load_graph" data-view="Graph" data-title="Builder DOM Load Speed" data-suffix=" s"style="background-color:#433685"></div>
+    </li>
+	
+		
+	<li data-row="3" data-col="1" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_homepage_page_load_graph" data-view="Graph" data-title="HomePage Page Load Speed" data-suffix=" s"style="background-color:#ff9618"></div>
+    </li>
+	
+	<li data-row="3" data-col="3" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_collections_page_load_graph" data-view="Graph" data-title="Collections Page Load Speed" data-suffix=" s"style="background-color:#1896ff"></div>
+    </li>
+	
+	<li data-row="3" data-col="5" data-sizex="2" data-sizey="1" data-max="10">
+      <div data-id="xedo_outfit_builder_page_load_graph" data-view="Graph" data-title="Builder Page Load Speed" data-suffix=" s"style="background-color:#433685"></div>
+    </li>
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+</div>
